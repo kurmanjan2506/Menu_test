@@ -1,0 +1,14 @@
+{% extends 'menu_app/base.html' %} {% block body %}
+<h1>{{title}}</h1>
+
+<ul>
+  {% for d in dishes %}
+  <li>
+    <h1>{{d.category}}</h1>
+    <li>{{d.name}}</li>
+    <hr />
+  </li>
+  {% endfor %}
+</ul>
+
+{% endblock body %}
